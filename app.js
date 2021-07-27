@@ -59,7 +59,6 @@ res.render('pages/all-pets',{title: 'all' ,animals});
 */
  app.post('/api/addAnimal',function(req,res){
    var newAnimal = req.body;
-   newAnimal.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
 
    animals.push(newAnimal);
    res.send('Animal agregado exitosamente');
